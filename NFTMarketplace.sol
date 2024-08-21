@@ -1,3 +1,4 @@
+//This smart contract is not live anywhere it's just for learning purposes.
 
 
 // SPDX-License-Identifier: MIT
