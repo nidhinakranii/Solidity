@@ -53,6 +53,7 @@ interface Citizenship {
     function checkUserStatus(address _user) external view returns(bool);
     function RegisterUser(string memory _cid,address _user) external returns(bool);
 }
+
 abstract contract Context {
     function _msgSender() internal view virtual returns (address) {
         return msg.sender;
@@ -748,7 +749,6 @@ contract Marketplace is Ownable{
             require(Citizenship(citizencontract).checkUserStatus(user)," user is block");
             return true;
         }
-        // require(citizencontract.checkregister(user),"is not blockchain.land Citizenship ");
         return false ;
     }
 }
